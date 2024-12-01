@@ -4,7 +4,7 @@ import java.io.File
 
 fun load(day: Int, example: Boolean): String? {
     val file = File(path(day, example))
-    return if (file.exists()) file.readText() else null
+    return if (file.exists()) file.readText().trimEnd() else null
 }
 
 fun path(day: Int, example: Boolean): String {

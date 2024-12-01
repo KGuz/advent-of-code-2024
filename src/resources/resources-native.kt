@@ -14,7 +14,7 @@ fun load(day: Int, example: Boolean): String? {
     fseek(file, 0, SEEK_SET)
     fread(buffer.refTo(0), size.toULong(), 1u, file)
     fclose(file)
-    return buffer.decodeToString()
+    return buffer.decodeToString().trimEnd()
 }
 
 fun path(day: Int, example: Boolean): String {
