@@ -9,5 +9,6 @@ interface Puzzle {
 fun dispatch(day: Int): Puzzle? =
     when (day) {
         1 -> Day01()
+        2 -> Day02()
         else -> null
     }
