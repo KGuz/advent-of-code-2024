@@ -28,9 +28,9 @@ class Day01 : Puzzle {
             left.add(seq.first().toInt())
 
             val key = seq.last().toInt()
-            right[key] = 1 + (right.get(key) ?: 0)
+            right[key] = 1 + (right[key] ?: 0)
         }
 
-        return left.sumOf { it * (right.get(it) ?: 0) }.toString()
+        return left.sumOf { it * (right[it] ?: 0) }.toString()
     }
 }
