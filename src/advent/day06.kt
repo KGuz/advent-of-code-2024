@@ -1,10 +1,5 @@
 package advent
 
-data class P2<T : Number>(
-    val x: T,
-    val y: T,
-)
-
 class Day06 : Puzzle {
     override fun partOne(input: String): String {
         val lines = input.lines()
