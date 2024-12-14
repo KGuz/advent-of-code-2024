@@ -20,5 +20,7 @@ fun dispatch(day: Int): Puzzle? =
         10 -> Day10()
         11 -> Day11()
         12 -> Day12()
+        13 -> Day13()
+        14 -> Day14()
         else -> null
     }

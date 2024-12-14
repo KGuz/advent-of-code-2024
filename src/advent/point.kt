@@ -10,3 +10,7 @@ data class P2<T : Number>(
 operator fun P2<Int>.plus(other: P2<Int>): P2<Int> = P2(this.x + other.x, this.y + other.y)
 
 operator fun P2<Int>.minus(other: P2<Int>): P2<Int> = P2(this.x - other.x, this.y - other.y)
+
+operator fun P2<Int>.times(other: Int): P2<Int> = P2(this.x * other, this.y * other)
+
+operator fun P2<Int>.div(other: Int): P2<Int> = P2(this.x / other, this.y / other)
