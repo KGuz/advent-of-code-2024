@@ -19,11 +19,7 @@ class Day10 : Puzzle {
             .toString()
     }
 
-    fun score(
-        trail: P2<Int>,
-        grid: List<List<Char>>,
-        unique: Boolean = true,
-    ): Int {
+    fun score(trail: P2<Int>, grid: List<List<Char>>, unique: Boolean = true): Int {
         val queue = ArrayDeque(listOf(trail))
         val visited = hashSetOf<P2<Int>>()
         var trailheads = 0
